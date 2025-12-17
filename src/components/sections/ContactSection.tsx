@@ -184,13 +184,10 @@ const ContactSection: React.FC = () => {
                   <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-3 sm:mr-4 mt-0.5" />
                   <div>
                     <h4 className="font-semibold mb-1 text-sm sm:text-base">
-                      Phone Numbers
+                      Phone / WhatsApp
                     </h4>
-                    <a href="tel:+8801646882798" className="text-text-secondary text-xs sm:text-sm hover:text-accent transition-colors">
-                      +880 1646-882798 (Sylhet)
-                    </a>
-                    <a href="tel:+8801337993522" className="block text-text-secondary text-xs sm:text-sm hover:text-accent transition-colors">
-                      +880 1337-993522 (Jalalpur)
+                    <a href="tel:+8801777476142" className="text-text-secondary text-xs sm:text-sm hover:text-accent transition-colors">
+                      +880 1777-476142
                     </a>
                   </div>
                 </div>
