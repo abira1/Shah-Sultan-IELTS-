@@ -1,0 +1,12 @@
+# Robots.txt for Shah Sultan's IELTS Academy
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin-login
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://ssieltsacademy.web.app/sitemap.xml
