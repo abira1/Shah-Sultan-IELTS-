@@ -134,6 +134,19 @@ const Footer: React.FC = () => {
               </Link>
             </div>
           </div>
+          <div className="mt-4 text-center">
+            <p className="text-xs sm:text-sm text-gray-400">
+              Design and Developed by{' '}
+              <a 
+                href="https://toiral-development.web.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-accent hover:text-white transition-colors font-medium"
+              >
+                Toiral Web Development
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>;
