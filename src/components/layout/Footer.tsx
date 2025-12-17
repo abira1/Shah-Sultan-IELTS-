@@ -111,8 +111,8 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-4 w-4 sm:h-5 sm:w-5 mr-2 text-accent" />
-                <a href="mailto:info@shahsultanielts.com" className="text-xs sm:text-sm text-gray-300 hover:text-accent break-all">
-                  info@shahsultanielts.com
+                <a href="mailto:shahsultans.ieltsacademy02@gmail.com" className="text-xs sm:text-sm text-gray-300 hover:text-accent break-all">
+                  shahsultans.ieltsacademy02@gmail.com
                 </a>
               </li>
             </ul>
