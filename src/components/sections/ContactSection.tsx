@@ -197,11 +197,8 @@ const ContactSection: React.FC = () => {
                     <h4 className="font-semibold mb-1 text-sm sm:text-base">
                       Email Address
                     </h4>
-                    <a href="mailto:info@shahsultanielts.com" className="text-text-secondary text-xs sm:text-sm hover:text-accent transition-colors break-all">
-                      info@shahsultanielts.com
-                    </a>
-                    <a href="mailto:admissions@shahsultanielts.com" className="block text-text-secondary text-xs sm:text-sm hover:text-accent transition-colors break-all">
-                      admissions@shahsultanielts.com
+                    <a href="mailto:shahsultans.ieltsacademy02@gmail.com" className="text-text-secondary text-xs sm:text-sm hover:text-accent transition-colors break-all">
+                      shahsultans.ieltsacademy02@gmail.com
                     </a>
                   </div>
                 </div>
