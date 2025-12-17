@@ -6,6 +6,26 @@
         ".write": "auth != null && (auth.uid == $uid || root.child('users').child(auth.uid).child('role').val() == 'admin')"
       }
     },
+    "homeContent": {
+      ".read": "true",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'"
+    },
+    "courses": {
+      ".read": "true",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'"
+    },
+    "teachers": {
+      ".read": "true",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'"
+    },
+    "questions": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'"
+    },
+    "exams": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'"
+    },
     ".read": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'",
     ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'admin'"
   }
