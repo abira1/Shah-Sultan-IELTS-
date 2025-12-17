@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice 1 answer</title>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/banner.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+</head>
+<body class="visible">
+    <!-- Banner Section -->
+    <div role="banner">
+        <div id="banner">
+            <div>
+                <img alt="IELTS" src="images/banner/IELTSlogo.png" height="60px" width="206px" class="ieltslogo">
+                <img alt="IELTS Partners" src="images/banner/IELTSpartners.jpg" class="ieltspartners">
+            </div>
+        </div>
+        
+        <!-- Test Banner with candidate info and controls -->
+        <div id="test-banner">
+            <div class="test-banner-left">
+                <div id="candidate">
+                    <div>
+                        <span id="candidate-name-label">Candidate name:</span>
+                        <strong aria-labelled-by="candidate-name-label" class="candidate-name">XXXX XXXXXXX</strong>
+                    </div>
+                    <div>
+                        <span id="candidate-number-label">Candidate number:</span>
+                        <strong aria-labelled-by="candidate-number-label" class="candidate-number">123456</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="test-banner-center">
+                <div id="timer">
+                    <span class="reader-only" id="timer-label">Time:</span>
+                    <div>
+                        <em>30</em>
+                        <span>minutes left</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="test-banner-right">
+                <div id="audio-control">
+                    <div id="slider"/>
+                    <input type="hidden" id="amount"/>
+                    <input value="test-content/Audio_OGG-1.ogg" type="hidden" id="main-audio-content"/>
+                </div>
+                <div id="audio-content"/>        
+                <ul id="banner-controls" role="toolbar">
+                    <li class="floatingTool"><a href="#" class="settingsLink">Settings</a></li>
+                    <li class="floatingTool"><a href="#" class="helpLink">Help<span> </span></a></li>
+                    <li class="floatingTool"><a href="#" class="lockLink">Hide</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation Section -->
+    <div role="navigation">
+        <h1 class="reader-only">Navigation</h1>
+        <div class="maximised" id="navigation-bar">
+            <div class="testPart">
+                <ul>
+                    <li class="assessmentSection">
+                        <span class="section-label"/>
+                        <ul>
+                            <li class="assessmentItemRef">
+                                <a href="#question-1" class="current">
+                                    <span class="question-label">Question </span>
+                                    <span class="question-number">
+                                        1
+                                    </span>
+                                </a>
+                                <a href="#question-2">
+                                    <span class="question-label">Question </span>
+                                    <span class="question-number">
+                                        2
+                                    </span>
+                                </a>
+                                <a href="#question-3">
+                                    <span class="question-label">Question </span>
+                                    <span class="question-number">
+                                        3
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="views">
+                    <a title="switch view to navigation summary" class="minimise" href="#">
+                        <span>navigation summary</span> 
+                    </a>
+                    <a title="switch view to navigation details" class="maximise" href="#">
+                        <span>navigation details</span> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <label id="review-checkbox">
+            <input type="checkbox"/>
+            Review
+        </label>
+        <a title="Previous Question" class="previous-btn">
+            <span class="reader-only">Previous Question</span>
+        </a>
+        <a title="Next Question" href="#" class="next-btn">
+            <span class="reader-only">Next Question</span>
+        </a>
+    </div>
+    
+    <!-- Main content area -->
+    <div role="main">
+        <!-- Main content will go here -->
+    </div>
+</body>
+</html>

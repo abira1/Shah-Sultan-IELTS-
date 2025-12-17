@@ -1,0 +1,401 @@
+.next-btn, .previous-btn {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    background: #34b2f1;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.next-btn { 
+    right: 0; 
+}
+
+.next-btn .reader-only,
+.previous-btn .reader-only {
+    position: absolute;
+    left: -9999px;
+}
+
+.next-btn::after {
+    content: '▶';
+    font-size: 18px;
+}
+
+.next-btn:hover,
+.next-btn:focus {
+    background: #47b7ec;
+}
+
+.previous-btn {
+    right: 56px;
+}
+
+.previous-btn::after {
+    content: '◀';
+    font-size: 18px;
+}
+
+.previous-btn:hover,
+.previous-btn:focus {
+    background: #47b7ec;
+}
+
+.previous-btn[href=''],
+.previous-btn:not([href]),
+.next-btn[href=''],
+.next-btn:not([href]) {
+    display: none;
+}
+
+#review-checkbox {
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#review-checkbox:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#review-checkbox input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: #4dd0e1;
+}
+
+#pageIdentifier {
+    border-radius: 5px;
+    position: absolute;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    background: #333 url(../images/navigation/navigation-popup.png) repeat-x left top;
+    border: 1px solid #202020;
+    padding: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 3;
+    bottom: 2.9em;
+}
+
+#pageIdentifier p { 
+    margin: 0; 
+    text-align: left;
+}
+
+#pageIdentifier span {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-left: 0.8em solid transparent;
+    border-right: 0.8em solid transparent;
+    border-top: 0.8em solid;
+    border-top-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    bottom: -0.9em;
+    left: 50%;
+    margin-left: -0.8em;
+}
+
+#media-player { 
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+#navigation-bar {
+    margin-left: 5.3em;
+    margin-right: 8.3em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-right: 30px;
+}
+
+#navigation-bar.minimised {
+    margin-bottom: 3px;
+    padding-top: 1.35em;
+}
+
+#navigation-bar.maximised {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0;
+    padding: 20px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+#navigation-bar .testPart ul,
+#navigation-bar .testPart li,
+#navigation-bar .testPart a {
+    display: block;
+    float: left;
+}
+
+#navigation-bar .part-label,
+#navigation-bar .section-label {
+    float: left;
+    margin-right: 0.2em;
+    margin-top: -0.175em;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    line-height: 2em;
+    font-weight: bold;
+    display: inline;
+}
+
+#navigation-bar .auto-width {
+    width: auto!important;
+    padding: 0 1em;
+}
+
+#navigation-bar.maximised .testPart ul {
+    margin-right: 0.5em;
+}
+
+#navigation-bar .testPart ul a {
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    display: block;
+    background-color: #555;
+    background: linear-gradient(to bottom, #666 0%, #333 100%);
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+#navigation-bar.minimised .part-label { 
+    display: none; 
+}
+
+#navigation-bar.minimised .testPart ul { 
+    margin-right: 3px; 
+}
+
+#navigation-bar.minimised .testPart ul a {
+    margin: 3px 1px 0.2em 0;
+    padding-left: 1em;
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+}
+
+#navigation-bar.maximised .part-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #666;
+}
+
+#navigation-bar.maximised .part-label + ul {
+    margin-left: 8em; /* ATTENTION: 8em would be needed for Use Of English! */
+}
+
+#navigation-bar.maximised .testPart > ul > li { 
+    position: relative; 
+}
+
+#navigation-bar.maximised .testPart > ul > li:last-child:not(.assessmentSection) { 
+    border-top: 2px groove #fff; 
+    padding-top: 5px;
+    width: 100%;
+}
+
+#navigation-bar.maximised .testPart > ul > li:last-child:not(.assessmentSection) .part-label { 
+    padding-top: 5px; 
+}
+
+#navigation-bar.maximised .testPart ul a {
+    margin-right: 8px;
+    margin-bottom: 12px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    line-height: 38px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#navigation-bar .testPart a.completed span {
+    border-bottom: 2px solid #fff;
+    padding: 0 2px;
+}
+
+#navigation-bar .testPart a.completed:not(.current) span {
+    border-color: #000;
+}
+
+#navigation-bar .testPart a.completed:not(.current) {
+    border-color: #fff;
+    background-color: #fff;
+    background: linear-gradient(to bottom, #f0f0f0 0%, #ddd 100%);
+    color: #000;
+}
+
+#navigation-bar.maximised .testPart a.marked-for-review,
+#navigation-bar.minimised .testPart a.marked-for-review:not(.current) {
+    border-radius: 50% !important;
+}
+
+#navigation-bar .testPart ul a:hover,
+#navigation-bar .testPart ul a:focus,
+#navigation-bar .testPart ul a.completed:not(.current):hover,
+#navigation-bar .testPart ul a.completed:not(.current):focus {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+    color: #4dd0e1 !important;
+    box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#navigation-bar .testPart ul a.current,
+#navigation-bar .testPart ul a.current:hover,
+#navigation-bar .testPart ul a.current:focus {
+    border-color: #4dd0e1;
+    background: linear-gradient(135deg, #26c6da 0%, #00acc1 50%, #0097a7 100%);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 
+        0 0 20px rgba(77, 208, 225, 0.4),
+        0 6px 20px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#navigation-bar.minimised .testPart ul a.current {
+    width: 0;
+    height: 0;
+    z-index: 1;
+    margin: 0 -2px auto -2px;
+    padding: 0 1px 0 0;
+    border-left: 0.7em solid transparent;
+    background: none;
+    border-right: 0.7em solid transparent;
+    border-top: 1.2em solid #1098dc;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#navigation-bar.minimised .testPart ul a.current:hover,
+#navigation-bar.minimised .testPart ul a.current:focus { 
+    border-top: 1.2em solid #47b7ec; 
+}
+
+/* Hidden from sighted users, but still announced by a screen reader. */
+#navigation-bar.minimised .minimise, 
+#navigation-bar.maximised .maximise, 
+#navigation-bar a.minimise span, 
+#navigation-bar a.maximise span, 
+#navigation-bar.minimised .section-label, 
+#navigation-bar .question-label {
+    position: absolute;
+    display: block;
+    top: auto;
+    left: -100000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#navigation-bar a.no-question {
+    background: none repeat scroll 0 0 #777 !important;
+    border-color: #555;
+}
+
+#navigation-bar .views {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
+
+#navigation-bar .minimise {
+    width: 28px;
+    height: 28px;
+    background: #34b2f1;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#navigation-bar .minimise::after {
+    content: '−';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#navigation-bar .maximise {
+    width: 28px;
+    height: 28px;
+    background: #34b2f1;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#navigation-bar .maximise::after {
+    content: '+';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#navigation-bar .minimise:hover,
+#navigation-bar .maximise:hover {
+    background: #47b7ec;
+}

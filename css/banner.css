@@ -1,0 +1,260 @@
+#banner {
+    background: linear-gradient(135deg, rgba(175,154,24,1) 0%, rgba(4,104,182,1) 100%);
+    overflow: hidden;
+    padding: 8px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#banner div {
+    background: #ffffff;
+    margin: 0;
+    padding: 16px 24px;
+    border-radius: 16px;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner .logo {
+    margin: 0;
+}
+
+#banner .ieltslogo {
+    margin: 0;
+    height: 50px;
+    width: auto;
+}
+
+#banner .ieltspartners {
+    margin: 0;
+    height: 40px;
+    width: auto;
+}
+
+#test-banner {
+    position: relative;
+    padding: 20px 32px;
+    min-height: 60px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+#test-banner > * {
+    margin: 0;
+}
+
+#test-banner > h1 {
+    display: none;
+}
+
+.test-banner-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.test-banner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.test-banner-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#candidate {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: #e8f4fd;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#candidate::before {
+    content: '👤';
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+#candidate-name-label,
+#candidate-number-label {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.candidate-name,
+.candidate-number {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#timer {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.15) 100%);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: #fff3cd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 
+        0 4px 15px rgba(255, 193, 7, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 193, 7, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+#timer::before {
+    content: '⏱️';
+    font-size: 16px;
+}
+
+#timer:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        0 6px 20px rgba(255, 193, 7, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#timer span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#timer em {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffd700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#banner-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#banner-controls li {
+    list-style: none;
+}
+
+#banner-controls a,
+.toolbarButtonIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.toolbarButtonIcon {
+    font-size: 1.1em;
+}
+
+#banner-controls a:hover { 
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#banner-controls a:active { 
+    transform: translateY(0);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.2),
+        inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#banner-controls a.helpLink span,
+.help .toolbarButtonIcon span {
+    background: url("../images/banner/help-icon.png") no-repeat center center;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5em;
+}
+
+.instructions {
+    background-image: url("../images/banner/instructions-icon.png");
+    padding-right: 1.5em;
+}
+
+.close {
+    background-image: url("../images/banner/close-icon.png");
+    width: 1.14286em;
+    height: 1.14286em;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    float: right;
+    cursor: pointer;
+}
+    
+.instructions, .close {
+    background-size: 16px;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.title .close {
+    margin-top: 2px;
+}
+
+#audio-control {
+    display: none;
+    float: right;
+    margin-left: 0.5em;
+    background-image: url("../images/banner/volume-icon.png");	
+    padding-left: 1.7em;
+}
+
+#slider {
+    font-size: 0.7em;
+    margin-top: 0.8em;
+    width: 5.5em;
+    display: inline-block;
+}
